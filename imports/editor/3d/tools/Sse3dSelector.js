@@ -1,15 +1,14 @@
 export default class Sse3dSelector {
-    constructor(scene) {
-        this.scene = scene;
-        this.polygon = [];
-    }
+  constructor(scene) {
+    this.scene = scene;
+    this.polygon = [];
+  }
 
-    pushPoint(x, y) {
-        this.polygon.push([x, y]);
-    }
+  pushPoint(x, y) {
+    this.polygon.push([x, y]);
+  }
 
-    deactivate() {
-        this.polygon.length = 0;
-    }
-
+  deactivate() {
+    this.polygon.length = 0;
+  }
 }
